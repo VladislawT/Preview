@@ -1,0 +1,18 @@
+.form__group{
+    margin-bottom: 1.5rem;
+}
+
+.form__control{
+    display: block;
+    width: 100%;
+    background: none;
+    font-family: inherit;
+    font-size: 1.45rem;
+    border-bottom: 1px solid #3F3f3f;
+    color: $white;
+    height: 36px;
+    padding-left: 10px;
+    &::placeholder{
+        color: rgba($color: $white, $alpha: .2);
+    }
+}

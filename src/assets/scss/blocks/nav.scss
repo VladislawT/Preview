@@ -1,0 +1,48 @@
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    position: relative;
+
+    &:hover {
+        .nav__link {
+            background-color: $hover-blue;
+        }
+
+        >.subnav {
+            display: flex;
+            background-color: $hover-blue;
+        }
+    }
+}
+
+.nav__link {
+    display: block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    padding: 1.5rem 2.4rem;
+    transition: background-color .2s linear;
+
+    &--active {
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            border-style: solid;
+            border-width: 6px 5px 0 5px;
+            border-color: $white transparent transparent transparent;
+            position: absolute;
+            top: 50%;
+            right: .7rem;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.nav__link--carent{
+    padding-right: 3.5rem;
+}
